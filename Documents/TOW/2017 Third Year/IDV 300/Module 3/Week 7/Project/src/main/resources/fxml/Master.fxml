@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="za.co.openwindow.civilbank.controller.MasterController"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="/styles/main.css"
+            styleClass="content"
+>
+
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+    <GridPane fx:id="masterGridPane"
+              gridLinesVisible="true"
+              AnchorPane.topAnchor="0"
+              AnchorPane.rightAnchor="0"
+              AnchorPane.bottomAnchor="0"
+              AnchorPane.leftAnchor="0"
+              hgap="5"
+              vgap="5"
+    >
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+            <ColumnConstraints percentWidth="8.3" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+            <RowConstraints percentHeight="8.3" />
+        </rowConstraints>
+
+        <ImageView fx:id="logoImageView"
+                   GridPane.rowIndex="1"
+                   GridPane.rowSpan="4"
+                   GridPane.columnIndex="3"
+                   GridPane.columnSpan="9"
+                   styleClass="logoImageView"
+
+        />
+
+        <Label fx:id="welcomeLabel"
+               GridPane.rowIndex="5"
+               GridPane.rowSpan="2"
+               GridPane.columnIndex="0"
+               GridPane.columnSpan="12"
+               maxHeight="Infinity"
+               styleClass="welcome"
+
+        >
+            Welcome to your Bank.
+        </Label>
+
+        <Button fx:id="viewTrainersButton"
+                GridPane.rowIndex="8"
+                GridPane.rowSpan="1"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="6"
+                maxWidth="Infinity"
+                onAction="#switchToViewClientsScene"
+        >
+            View Clients
+        </Button>
+
+        <Button fx:id="newClientButton"
+                onAction="#newClient"
+                GridPane.rowIndex="8"
+                GridPane.rowSpan="1"
+                GridPane.columnIndex="6"
+                GridPane.columnSpan="6"
+                maxWidth="Infinity"
+        >
+            New Client
+        </Button>
+
+        <Button fx:id="loadClientButton"
+                onAction="#loadClient"
+                GridPane.rowIndex="9"
+                GridPane.rowSpan="1"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="6"
+                maxWidth="Infinity"
+        >
+            Load Client
+        </Button>
+
+        <Button fx:id="searchButton"
+                onAction="#searchClient"
+                GridPane.rowIndex="10"
+                GridPane.rowSpan="1"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="6"
+                maxWidth="Infinity"
+        >
+            Search Client
+        </Button>
+
+        <Button fx:id="closeButton"
+                onAction="#closeApp"
+                GridPane.rowIndex="11"
+                GridPane.rowSpan="1"
+                GridPane.columnIndex="6"
+                GridPane.columnSpan="6"
+                maxWidth="Infinity"
+                styleClass="danger"
+        >
+            Exit App
+        </Button>
+
+    </GridPane>
+
+</AnchorPane>

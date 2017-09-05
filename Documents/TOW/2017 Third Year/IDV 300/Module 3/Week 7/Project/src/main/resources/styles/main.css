@@ -1,0 +1,21 @@
+.content {
+    -fx-background-color: white;
+}
+
+.logoImageView {
+    -fx-margin: 0, 0, 0, 0;
+}
+
+.welcome {
+    -fx-font-family: 'Verdana';
+    -fx-font-size: 14px;
+}
+
+.danger {
+    -fx-background-color: rgb(180, 0, 0);
+    -fx-text-fill: rgb(255, 200, 200);
+}
+
+.danger:hover {
+    -fx-background-color: rgba(180, 0, 0, 0.8);
+}

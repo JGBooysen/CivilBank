@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="za.co.openwindow.civilbank.controller.ViewClientsController"
+            stylesheets="/styles/main.css"
+            styleClass="content"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <fx:include source="MenuBar.fxml"
+                fx:id="menuBar"
+                AnchorPane.leftAnchor="0"
+                AnchorPane.rightAnchor="0"
+                AnchorPane.topAnchor="0" />
+
+    <Label
+        AnchorPane.topAnchor="40"
+        AnchorPane.leftAnchor="10"
+    >
+        Please select one of the clients below:
+    </Label>
+
+    <VBox fx:id="clientsVBox"
+          AnchorPane.topAnchor="60"
+          AnchorPane.leftAnchor="10"
+          AnchorPane.bottomAnchor="10"
+          AnchorPane.rightAnchor="10"
+    >
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<MenuBar xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:controller="za.co.openwindow.civilbank.controller.MenuBarController">
+    <Menu text="File">
+        <MenuItem text="New Client"/>
+        <MenuItem text="Load Client" onAction="#loadClient"/>
+        <MenuItem text="Save Client" onAction="#saveClient"/>
+        <SeparatorMenuItem/>
+        <MenuItem text="Exit" onAction="#closeApp"/>
+    </Menu>
+    <Menu text="Navigate">
+        <MenuItem text="Home" onAction="#goToHome" />
+        <MenuItem text="Clients" onAction="#goToClients" />
+    </Menu>
+</MenuBar>
